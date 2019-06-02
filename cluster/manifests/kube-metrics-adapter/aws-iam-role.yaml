@@ -1,0 +1,7 @@
+apiVersion: amazonaws.com/v1
+kind: AWSIAMRole
+metadata:
+  name: kube-metrics-adapter-aws-iam-credentials
+  namespace: kube-system
+spec:
+  roleReference: {{ .LocalID}}-kube-metrics-adapter

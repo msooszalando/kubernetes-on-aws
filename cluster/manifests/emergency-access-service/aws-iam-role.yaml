@@ -1,0 +1,7 @@
+apiVersion: amazonaws.com/v1
+kind: AWSIAMRole
+metadata:
+  name: emergency-access-service-aws-iam-credentials
+  namespace: kube-system
+spec:
+  roleReference: {{.LocalID}}-emergency-access-service
